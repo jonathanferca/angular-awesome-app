@@ -5,15 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  public user: object = {
-    name: 'Jon',
-    lastName: 'Snow',
-    position: 'King in the north'
-  };
-
   constructor() { }
 
   getUser(): object {
-    return this.user;
+    return {
+      name: 'Jon',
+      lastName: 'Snow',
+      position: 'King in the north'
+    };
   }
 }

@@ -9,7 +9,7 @@ import { UserService } from '../../services/user/user.service';
 })
 export class ProfileComponent implements OnInit {
 
-  public user: object;
+  public user: any;
 
   constructor(private userService: UserService) { }
 
