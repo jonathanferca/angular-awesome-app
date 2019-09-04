@@ -1,0 +1,17 @@
+<h1>Two-Way Data Binding</h1>
+
+<fieldset>
+  <h2>Name</h2>
+  <label for="">Person Name:</label>
+  <input [ngModel]="personName" type="text"/>
+  <br>
+  <button (click)="getPersonNameFromClass()" class="action-button">Get personName from Class</button>
+</fieldset>
+
+<fieldset>
+  <h2>Last Name</h2>
+  <label for="">Person Last Name:</label>
+  <input [(ngModel)]="personLastName" type="text"/>
+  <br>
+  <button (click)="getPersonLastNameFromClass()" class="action-button">Get personLastName from Class</button>
+</fieldset>
